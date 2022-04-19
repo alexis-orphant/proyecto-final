@@ -27,7 +27,7 @@ header{
     align-items: center;
     padding: 0px 10px;
     background-color: rgba(0, 0, 0, 0.750);
-    border: 2px solid red;
+    border: 2px solid #3c66e3;
 }
 header a img{
     width: 150px;
@@ -43,6 +43,23 @@ header nav ul li a{
     padding-right: 30px;
     padding-left: 30px;
     color: white;
+}
+.boton{
+    display: inline-block;
+    color: white;
+    padding: 5px 15px;
+    border: 2px solid #3c66e3;
+    border-radius: 10px;
+}
+.boton:hover{
+    animation: pulsate 1s ease-in-out;
+}
+@keyframes pulsate{
+    0%{
+        box-shadow: 
+        0 0 10px #5ddcff,
+        0 0 15px #4e00c2;
+    }
 }
 
 /* Info personal */
@@ -125,26 +142,6 @@ main section div{
     width: 100px;
 }
 
-/*seccion sobre-mi
-.sobre-mi{
-    background-color: rgba(255, 255, 255, 0.61);
-}
-.sobre-mi div figure img{
-    width: 400px;
-}
-.sobre-mi div .familia img{
-    width: 300px;
-}
-.sobre-mi h2{
-    text-align: center;
-    font-size: 100px;
-}
-.sobre-mi div{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}*/
-
 /*Pie de pagina*/
 footer{
     display: flex;
@@ -153,7 +150,7 @@ footer{
     width: 100%;
     padding: 0px 10px;
     background-color: rgba(0, 0, 0, 0.750);
-    border: 2px solid red;
+    border: 2px solid #3c66e3;
 }
 footer a img{
     width: 175px;
